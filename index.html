@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgba(24,24,24,255);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120vh;
+            width: 100%;
+        }
+        .content{
+            width: 80vw;
+            max-width: 970px;
+            aspect-ratio: 1 / 1.41;
+            background-image: url(bg.png);
+            box-shadow: 0 0 2px rgba(146, 146, 146, .5);
+            background-position: center;
+            background-size: cover;
+            display: flex
+        ;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .subcontainer{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            color: white;
+            justify-content: space-between;
+        }
+        
+        #btn{
+            height: 10%;
+        }
+        .vide{
+            height: 7.6%;
+        }
+        .boutton{
+            height: 45%;
+            border-radius: 2vw;
+            background-color: rgba(243, 205, 38, 0.452);
+            /*box-shadow: 0 0 10px rgba(146, 146, 146, 0.2);*/
+        }
+        .boutton:active{
+            background-color: rgba(248, 233, 97, 0.596);
+        }
+        .boutton:hover{
+            background-color: rgba(255, 248, 190, 0.596);
+        }
+        #eglise{
+            width: 45%;
+        }
+        #espace{
+            width: 40%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="subcontainer" id="btn">
+                <div class="boutton" id="eglise"></div>
+                <div class="boutton" id="espace"></div>
+            </div>
+            <div class="vide"></div>
+        </div>
+    </div>
+</body>
+</html>
