@@ -14,7 +14,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 120vh;
             width: 100%;
         }
         .content{
@@ -47,7 +46,12 @@
             height: 7.6%;
         }
         .boutton{
-            height: 45%;
+            height: 50px;
+            width: 200px;
+            margin: 10px;
+            display: flex;  
+            justify-content: center;
+
             border-radius: 2vw;
             background-color: rgba(243, 205, 38, 0.452);
             /*box-shadow: 0 0 10px rgba(146, 146, 146, 0.2);*/
@@ -58,11 +62,12 @@
         .boutton:hover{
             background-color: rgba(255, 248, 190, 0.596);
         }
-        #eglise{
-            width: 45%;
-        }
-        #espace{
-            width: 40%;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: large;
+            align-items: center;
         }
 
     </style>
@@ -70,12 +75,23 @@
 <body>
     <div class="container">
         <div class="content">
-            <div class="subcontainer" id="btn">
-                <a class="boutton" id="eglise" href="https://maps.app.goo.gl/GPo34vQX5j6iBncU8"></a>
-                <a class="boutton" id="espace" href="https://maps.app.goo.gl/6StsGc5fXCZK9NoY8"></a>
-            </div>
-            <div class="vide"></div>
+            
         </div>
     </div>
+    <div class="subcontainer" id="btn">
+                <a class="boutton" id="eglise" href="https://maps.app.goo.gl/GPo34vQX5j6iBncU8">
+                    Eglise
+                </a>
+                <a class="boutton" id="espace" href="https://maps.app.goo.gl/6StsGc5fXCZK9NoY8">
+                    Espace
+                </a>
+                <a class="boutton" id="espace" href="https://maps.app.goo.gl/t7dbK4Cq3Md7DUJWA">
+                    Miason
+                </a>
+                <a class="boutton" id="espace" href="table.jpg">
+                    Plan de table
+                </a>
+            </div>
+            <div class="vide"></div>
 </body>
 </html>
